@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDPR 2 Aludra Jumaat</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Trebuchet MS",Arial,sans-serif;
+  background:linear-gradient(135deg,#fff0f7,#eaf7ff,#fff8d9);
+  color:#40305f;
+}
+header{
+  text-align:center;
+  padding:30px 15px;
+  color:white;
+  background:linear-gradient(120deg,#ff65a5,#9b83f5,#54c7ed);
+  border-radius:0 0 30px 30px;
+}
+header h1{font-size:clamp(28px,7vw,45px);margin:8px}
+header p{font-weight:bold}
+main{max-width:800px;margin:auto;padding:16px}
+.home{text-align:center;padding:55px 15px}
+.home .picture{font-size:55px}
+.home p{font-size:18px;line-height:1.6}
+button{
+  border:0;border-radius:30px;padding:16px 25px;
+  background:#ffdf59;color:#54358b;
+  font-size:19px;font-weight:bold;cursor:pointer;
+  box-shadow:0 5px 0 #e5ad37;
+}
+.subject{margin:25px 0}
+.subject h2{
+  color:white;padding:18px;border-radius:20px;
+  font-size:clamp(23px,6vw,32px);margin-bottom:12px;
+}
+.psv h2{background:#ff629c}
+.math h2{background:#3998ed}
+.bm h2{background:#35b77b}
+.pj h2{background:#ff9d47}
+.eng h2{background:#9b6be8}
+.card{
+  background:white;border-radius:18px;padding:18px;
+  margin:12px 0;box-shadow:0 4px 14px #50387812;
+  overflow-wrap:anywhere;
+}
+.card h3{color:#8052c9;margin-top:0}
+.card p,.card li{line-height:1.65}
+.card li{margin-bottom:5px}
+.link{
+  display:block;text-decoration:none;text-align:center;
+  background:#eee8ff;color:#54358b;font-weight:bold;
+  border-radius:13px;padding:14px;margin-top:10px;
+}
+.link:active{transform:scale(.98)}
+.reference{width:100%;height:auto;border-radius:12px}
+.back{background:white;color:#704ab0;font-size:15px;
+  box-shadow:none;padding:10px 14px}
+footer{text-align:center;padding:25px;font-weight:bold}
+.note{background:#fff7d8}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<section id="home">
+  <header>
+    <div style="font-size:45px">🌈 📚 🌼</div>
+    <h1>PDPR 2<br>Aludra Jumaat</h1>
+    <p>Belajar dengan ceria, berjaya bersama! ✨</p>
+  </header>
+
+  <div class="home">
+    <div class="picture">🦋 🌸 ✏️ ⭐</div>
+    <p>
+      Hai murid-murid!<br>
+      Jom belajar, bermain kuiz dan siapkan
+      aktiviti hari ini. Kamu pasti boleh! 💪
+    </p>
+    <button onclick="showLessons()">Selamat belajar! 🚀</button>
+  </div>
+</section>
+
+<section id="lessons" hidden>
+  <header>
+    <div style="font-size:40px">🎒 🌟 🖍️</div>
+    <h1>PDPR 2 Aludra Jumaat</h1>
+    <p>Jom belajar bersama-sama!</p>
+  </header>
+
+  <main>
+    <button class="back" onclick="showHome()">← Halaman utama</button>
+
+    <!-- PSV -->
+    <section class="subject psv">
+      <h2>🎨 PSV</h2>
+
+      <div class="card">
+        <h3>📌 Tajuk</h3>
+        <p><b>Jalan-jalan ke Taman Rama-rama</b></p>
+      </div>
+
+      <div class="card">
+        <h3>👩‍🏫 Arahan guru</h3>
+        <p>Menghasilkan karya Rama-rama Simetri berdasarkan contoh dan langkah yang telah diberikan.</p>
+        <ol>
+          <li>Lipat kertas kepada dua.</li>
+          <li>Lukis separuh bentuk rama-rama.</li>
+          <li>Letakkan warna air/poster pada sayap.</li>
+          <li>Lipat dan tekan perlahan-lahan.</li>
+          <li>Buka kertas dan hias dengan suasana taman. 🌸🌿</li>
+        </ol>
+        <p>Murid-murid boleh merujuk gambar contoh kaedah aktiviti yang diberikan sebagai panduan.</p>
+        <p>Jika tiada warna air/poster, murid boleh menggunakan pensel warna atau krayon. Lukis rama-rama besar dan buat corak yang sama pada kedua-dua sayap.</p>
+      </div>
+
+      <div class="card">
+        <h3>🖼️ Lihat / download gambar rujukan</h3>
+        <p>Contoh kaedah aktiviti Rama-rama Simetri:</p>
+        <p class="note">Letakkan gambar PSV dalam folder yang sama dengan fail HTML dan namakan gambar itu <b>psv.jpg</b>.</p>
+        <img class="reference" src="psv.jpg" alt="Contoh langkah menghasilkan rama-rama simetri">
+      </div>
+
+      <div class="card">
+        <h3>📷 Cara hantar hasil kerja</h3>
+        <p>Ambil gambar hasil kerja dan upload online.</p>
+      </div>
+
+      <div class="card">
+        <h3>☁️ Upload online</h3>
+        <a class="link" href="https://drive.google.com/drive/folders/1imAZ_9epcqqRH30LIcrCK-RuDSzd_C5h" target="_blank">Buka folder penghantaran PSV ↗</a>
+      </div>
+    </section>
+
+    <!-- MATEMATIK -->
+    <section class="subject math">
+      <h2>🔢 MATEMATIK</h2>
+
+      <div class="card">
+        <h3>👩‍🏫 Arahan guru</h3>
+        <ol>
+          <li>Tonton video.</li>
+          <li>Jawab kuiz.</li>
+          <li>Jawab soalan di buku aktiviti muka surat 115–116.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>▶️ Link video</h3>
+        <a class="link" href="https://youtu.be/vf0g6llVp18?si=1ij3LvcIaZz7Bo_j" target="_blank">Tonton video Matematik ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>🎮 Link kuiz</h3>
+        <a class="link" href="https://wordwall.net/play/121229/817/682?wwmethod=link" target="_blank">Main kuiz Matematik ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>📤 Cara hantar hasil kerja</h3>
+        <ol>
+          <li>Guru akan menyemak kuiz online melalui scoreboard.</li>
+          <li>Ambil gambar latihan buku aktiviti dan hantar online.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>☁️ Upload online</h3>
+        <a class="link" href="https://padlet.com/g58529554/pdpr-matematik-tahun-2-s024gbw6uz5xrqin0rnz" target="_blank">Hantar latihan Matematik ↗</a>
+      </div>
+    </section>
+
+    <!-- BAHASA MELAYU -->
+    <section class="subject bm">
+      <h2>📖 BAHASA MELAYU</h2>
+
+      <div class="card">
+        <h3>👩‍🏫 Arahan guru</h3>
+        <p><b>Tajuk: Kata perintah.</b></p>
+        <p>Murid tonton video dan jawab kuiz online.</p>
+      </div>
+
+      <div class="card">
+        <h3>▶️ Link video</h3>
+        <a class="link" href="https://drive.google.com/file/d/1miuVkXZ26BRf9Sbvo9n_07IkvlyywWwA/view?usp=sharing" target="_blank">Tonton video Bahasa Melayu ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>🎮 Link kuiz online</h3>
+        <a class="link" href="https://wordwall.net/play/18477/728/33859?wwmethod=lin" target="_blank">Jawab kuiz Bahasa Melayu ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>📤 Cara hantar hasil kerja</h3>
+        <p>Guru akan menyemak kuiz online melalui scoreboard.</p>
+        <p>Boleh dibuat mengikut kesesuaian masa murid dan ibu bapa.</p>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN JASMANI -->
+    <section class="subject pj">
+      <h2>🤸 PENDIDIKAN JASMANI</h2>
+
+      <div class="card">
+        <h3>👩‍🏫 Arahan guru</h3>
+        <p>Sila ikuti sesi pembelajaran hari ini melalui pautan di bawah.</p>
+      </div>
+
+      <div class="card">
+        <h3>📝 Link latihan</h3>
+        <a class="link" href="https://forms.gle/YgvWJbtZaoAkJub57" target="_blank">Buka latihan Pendidikan Jasmani ↗</a>
+      </div>
+    </section>
+
+    <!-- BAHASA INGGERIS -->
+    <section class="subject eng">
+      <h2>🇬🇧 BAHASA INGGERIS</h2>
+
+      <div class="card">
+        <h3>👩‍🏫 Arahan guru</h3>
+        <p><b>STEP 1:</b> Print/copy the worksheet, paste it into the exercise book and complete the work.</p>
+        <p><b>STEP 2:</b> Answer the quiz/play the game using the link provided.</p>
+      </div>
+
+      <div class="card">
+        <h3>🖼️ Lihat / download gambar</h3>
+        <p>Worksheet: The Weather</p>
+        <p class="note">Letakkan gambar lembaran kerja Bahasa Inggeris dalam folder yang sama dan namakan gambar itu <b>english.jpg</b>.</p>
+        <img class="reference" src="english.jpg" alt="English worksheet about the weather">
+      </div>
+
+      <div class="card">
+        <h3>🎮 Link kuiz online</h3>
+        <a class="link" href="https://play.blooket.com/play?hwId=6accb165f9ea238262f3c3cb" target="_blank">Main kuiz Bahasa Inggeris ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>📷 Cara hantar hasil kerja</h3>
+        <p>Ambil gambar, namakan gambar menggunakan nama penuh dan upload online.</p>
+      </div>
+
+      <div class="card">
+        <h3>☁️ Link untuk upload</h3>
+        <a class="link" href="https://drive.google.com/drive/folders/1qi_-FuH2fesoOqkIMd8yEfx0lxX_5y21?usp=sharing" target="_blank">Hantar latihan Bahasa Inggeris ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>🌈 Kamu hebat! Teruskan usaha dan selamat belajar! 🌼</footer>
+</section>
+
+<script>
+function showLessons(){
+  document.getElementById("home").hidden=true;
+  document.getElementById("lessons").hidden=false;
+  window.scrollTo(0,0);
+}
+function showHome(){
+  document.getElementById("lessons").hidden=true;
+  document.getElementById("home").hidden=false;
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
